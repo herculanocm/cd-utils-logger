@@ -1,5 +1,11 @@
 import setuptools
+from setuptools import setup
 
+# read the contents of your README file
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setuptools.setup(
     name='cd-utils-logger',
@@ -14,6 +20,8 @@ setuptools.setup(
     keywords='tools utils logger',
     install_requires=['colorama'],
     python_requires='>=3',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
