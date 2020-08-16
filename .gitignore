@@ -4,6 +4,8 @@
 /build
 /dist
 *.egg-info
+/cd_utils_logger.egg-info
+/cd_utils_logger*
 
 # dependencies
 /venv
